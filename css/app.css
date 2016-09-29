@@ -39,16 +39,43 @@ h1, h2, h3, h4, h5, h6, button {
 	color: white;
 }
 
-#submenu-container {
-	border:0;
-}
+
 
 #tickets-action .callout {
 	background-color: #5e7eb7;
 	color: white;
+	margin-bottom: 0;
 }
 
 #tickets-action .callout button {
 	color: white;
 	border: 1px solid white;
+}
+
+#lineup-container, 
+#lineup-container .tabs,
+#lineup-container .tabs-panel,
+#lineup-container .tabs .tabs-title{
+	background-color: #9676af;
+	color: white;
+	padding: 1em 0;
+	border: 0;
+	text-transform: uppercase;
+}
+
+#lineup-container .tabs .tabs-title a {
+	font-size: 18px;
+	color: #a7fffb;
+}
+
+#lineup-container .tabs .tabs-title a:hover {
+	background-color: #9676af;
+	font-family: 'Bree Serif', serif;
+	color: white;
+	
+}
+
+.tabs-title {
+	display: inline-block;
+	float: none;
 }
