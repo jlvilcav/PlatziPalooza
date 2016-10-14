@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation-flex.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/pricing-table.css">
+    <link rel="stylesheet" href="css/app.css">    
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
   </head>
   <body>
@@ -159,7 +159,7 @@
     <!-- Compra de boletos -->
     <section id="tickets-container">
       <h3 class="text-center">Compra tus boletos</h3>  
-      <div class="row">        
+      <div class="row" data-equalizer data-equalize-on="small">        
           <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
             <ul class="pricing-table no-bullet text-center">
               <li class="title">Platino</li>
@@ -176,10 +176,10 @@
               <li class="title">Gold</li>
               <li class="price">$90</li>
               <li class="description">Acceso viernes, sábado y domingo</li>
-              <li>Podrás Comprar una bebida por cada día</li>
+              <li data-equalizer-watch>Una bebida incluida por cada día</li>
               <li>-</li>
               <li>-</li>
-              <li><a class="button" href="#">Comprar Platino</a></li>
+              <li><a class="button" href="#">Comprar Gold</a></li>
             </ul>
           </div> 
           <div class="column small-6  medium-4 ">
@@ -187,10 +187,10 @@
               <li class="title">Silver</li>
               <li class="price">$65</li>
               <li class="description">Acceso viernes, sábado y domingo</li>
+              <li data-equalizer-watch>-</li>
               <li>-</li>
               <li>-</li>
-              <li>-</li>
-              <li><a class="button" href="#">Comprar Gold</a></li>
+              <li><a class="button" href="#">Comprar Silver</a></li>
             </ul>
           </div>     
       </div>
@@ -198,10 +198,20 @@
 
     <!-- Compra de boletos -->
 
+    <!-- Info -->
+    <section id="info-container">
+      <h3 class="text-center">Información</h3>
+      <div class="text-center">
+        <div class="info-map" data-interchange="[assets/map-small.html, small],[assets/map.html, large]"></div>
+      </div>
+    </section>
 
+    <!-- Info -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
+
+
