@@ -44,20 +44,25 @@
     <!-- Logo   -->
 
     <!-- Menu   -->
-    <section id="menu-container">
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li><a href="#">Tickets</a></li>
-        <li>
-          <a href="#">Lineup</a>
-          <ul id="submenu-container" class="menu">
-            <li><a href="#">Viernes</a></li>
-            <li><a href="#">Sábado</a></li>
-            <li><a href="#">Domingo</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Subscribete</a></li>
-      </ul>
+    <section id="scrollsticky" data-sticky-container>
+    <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollsticky">
+      <nav id="menu-container" data-magellan>
+        <ul class="menu dropdown align-spaced" data-dropdown-menu>
+          <li><a href="#tickets-action">Tickets</a></li>
+          <li>
+            <a href="#lineup-container">Lineup</a>
+            <ul id="#submenu-container" class="menu">
+              <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+              <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
+              <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
+            </ul>
+          </li>
+          <li><a href="#info-container">Info</a></li>
+          <li><a href="#suscribete-container">Subscribete</a></li>
+        </ul>
+      </nav>
+    </div>
+      
     </section>
     <!-- Menu   -->
     
@@ -72,7 +77,7 @@
     <!-- tickets   -->
 
     <!-- LineUp   -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magellan-target="lineup-container">
       <h3 class="text-center">Lineup</h1>
       <ul class="tabs text-center" data-tabs id="lineup-tabs">
         <li class="tabs-title is-active">
@@ -157,7 +162,7 @@
     <!-- LineUp   -->
 
     <!-- Compra de boletos -->
-    <section id="tickets-container">
+    <section id="tickets-container" data-magellan-target="tickets-container">
       <h3 class="text-center">Compra tus boletos</h3>  
       <div class="row" data-equalizer data-equalize-on="small">        
           <div class="column small-10 small-offset-1 medium-6 medium-offset-3">
@@ -199,7 +204,7 @@
     <!-- Compra de boletos -->
     
     <!-- Suscribete -->
-    <section id="suscribete-container">
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
       <h3 class="text-center">Suscribete</h3>
       <h4 class="text-center"><small>Recibe las ultimas novedades de nuestro concierto.</small></h4>
       <form action="" method="" novalidate data-abide>
@@ -222,7 +227,7 @@
     <!-- Suscribete -->
 
     <!-- Info -->
-    <section id="info-container">
+    <section id="info-container" data-magellan-target="info-container">
       <h3 class="text-center">Información</h3>
       <div class="text-center">
         <div class="info-map" data-interchange="[assets/map-small.html, small],[assets/map.html, large]"></div>
